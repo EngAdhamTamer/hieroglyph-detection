@@ -42,3 +42,4 @@ def convert_to_single_class(labels_dirs):
 if __name__ == "__main__":
     convert_to_single_class(LABELS_DIRS)
 
+
