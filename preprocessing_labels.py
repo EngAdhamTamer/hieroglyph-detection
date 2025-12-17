@@ -1,10 +1,14 @@
 import os
 
-LABELS_DIRS = [
-    r"C:/Users/Compumarts/Desktop/final_cv_project/dataset/train/labels",
-    r"C:/Users/Compumarts/Desktop/final_cv_project/dataset/valid/labels",
-    r"C:/Users/Compumarts/Desktop/final_cv_project/dataset/test/labels"
-]
+   # Get base directory
+   BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+   # Configure label directories
+   LABELS_DIRS = [
+       os.path.join(BASE_DIR, "dataset", "train", "labels"),
+       os.path.join(BASE_DIR, "dataset", "valid", "labels"),
+       os.path.join(BASE_DIR, "dataset", "test", "labels")
+   ]
 
 def convert_to_single_class(labels_dirs):
     for labels_dir in labels_dirs:
@@ -37,3 +41,4 @@ def convert_to_single_class(labels_dirs):
 
 if __name__ == "__main__":
     convert_to_single_class(LABELS_DIRS)
+
