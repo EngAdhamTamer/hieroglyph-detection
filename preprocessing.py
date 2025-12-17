@@ -7,13 +7,17 @@ from PIL import Image, ImageTk
 import tkinter as tk
 from tkinter import filedialog
 from ultralytics import YOLO
-
+import shutil
 # ***********************************************************
 #                    PATHS AND CONFIG
 # ***********************************************************
 
-DATASET_PATH = r"C:/Users/Compumarts/Desktop/computervision 1"  #  dataset folder
-PREPROCESSED_PATH = r"C:/games/A computer vision project/preprocessed data"
+ # Get base directory
+   BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+   
+   # Configure paths - users should update these to their dataset location
+   DATASET_PATH = os.path.join(BASE_DIR, "dataset")  # or provide your dataset path
+   PREPROCESSED_PATH = os.path.join(BASE_DIR, "preprocessed_data")
 
 #  preprocessed directories
 os.makedirs(PREPROCESSED_PATH, exist_ok=True)
@@ -45,7 +49,7 @@ def preprocess_dataset():
 
             # Copy labels as-is
             if os.path.exists(label_path):
-                os.system(f'copy "{label_path}" "{out_lbl_dir}" > nul')
+                   shutil.copy2(label_path, out_lbl_dir)
 
             # Load image
             img = cv2.imread(img_path)
@@ -75,4 +79,5 @@ def preprocess_dataset():
 
     print("Preprocessing complete.")
 if __name__ == "__main__":
+
     preprocess_dataset()
