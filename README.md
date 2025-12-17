@@ -7,7 +7,6 @@
 
 An AI-powered computer vision system for detecting and segmenting ancient Egyptian hieroglyphs from archaeological images using YOLOv8 instance segmentation.
 
-![Hieroglyph Detection Demo](assets/demo.png)
 
 ## 📋 Table of Contents
 - [Overview](#overview)
