@@ -253,8 +253,8 @@ This project was developed as a university Computer Vision course project by:
 - **Mohamed Korayem** - [LinkedIn](https://www.linkedin.com/in/mohamed-korayem-b44b5331b/)
 - **Nasser Aly** - [LinkedIn](https://www.linkedin.com/in/naser-ali-naser-b78457320/)
 - **Ahmed Yahia** - [LinkedIn](https://www.linkedin.com/in/ahmed-yahia-016a0b288/)
+- **Mohamed El-Saeed** - [LinkedIn](https://www.linkedin.com/in/mohamed-badawy-631142199/)
 - **Mazen Ashraf**
-- **Mohamed El-Saeed**
 
 ## 🙏 Acknowledgments
 
