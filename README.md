@@ -246,14 +246,14 @@ The model successfully detects and segments hieroglyphs across various condition
 This project was developed as a university Computer Vision course project by:
 
 - **Adham Tamer** - [LinkedIn](https://www.linkedin.com/in/adhamtamer/) | [GitHub](https://github.com/EngAdhamTamer)
-- **Ahmed Sherif**
-- **Ahmed Ramadan**
-- **Saif Mohamed**
-- **Muhab Mohamed**
-- **Mohamed Korayem**
-- **Nasser Aly**
+- **Ahmed Sherif** - [LinkedIn](https://www.linkedin.com/in/ahmed-sherif06/)
+- **Ahmed Ramadan** - [LinkedIn](https://www.linkedin.com/in/ahmed-ramadan240/)
+- **Saif Mohamed** - [LinkedIn](https://www.linkedin.com/in/saif-mohamed-1002a5274/)
+- **Muhab Mohamed** - [LinkedIn](https://www.linkedin.com/in/muhab-mohamed-abdelraouf-209814302/)
+- **Mohamed Korayem** - [LinkedIn](https://www.linkedin.com/in/mohamed-korayem-b44b5331b/)
+- **Nasser Aly** - [LinkedIn](https://www.linkedin.com/in/naser-ali-naser-b78457320/)
+- **Ahmed Yahia** - [LinkedIn](https://www.linkedin.com/in/ahmed-yahia-016a0b288/)
 - **Mazen Ashraf**
-- **Ahmed Yahia**
 - **Mohamed El-Saeed**
 
 ## 🙏 Acknowledgments
