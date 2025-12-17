@@ -1,0 +1,32 @@
+# Dataset configuration for YOLOv8 Hieroglyph Segmentation
+
+# Dataset root directory (relative to this file)
+path: ../dataset
+
+# Train/Val/Test splits (relative to path)
+train: train/images
+val: valid/images
+test: test/images
+
+# Class names
+names:
+  0: hieroglyph
+
+# Number of classes
+nc: 1
+
+# Dataset Information
+# Note: The actual dataset images are not included in this repository due to size constraints.
+# The dataset contains 235,436 hieroglyph instances across train/valid/test splits.
+# 
+# Expected folder structure:
+# dataset/
+# ├── train/
+# │   ├── images/
+# │   └── labels/
+# ├── valid/
+# │   ├── images/
+# │   └── labels/
+# └── test/
+#     ├── images/
+#     └── labels/
