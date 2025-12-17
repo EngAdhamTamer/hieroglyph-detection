@@ -6,8 +6,9 @@ import numpy as np
 from ultralytics import YOLO
 
 # ---------------- CONFIG ----------------
-MODEL_PATH = "C:/Users/Compumarts/Desktop/final_cv_project/runs/segment/hieroglyph_seg/weights/best.pt"
-IMG_SIZE = 640
+# Model path - looks for weights in runs/segment/hieroglyph_seg/weights/
+   BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+   MODEL_PATH = os.path.join(BASE_DIR, "runs", "segment", "hieroglyph_seg", "weights", "best.pt")
 # ----------------------------------------
 
 class HieroglyphGUI:
@@ -74,3 +75,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = HieroglyphGUI(root)
     root.mainloop()
+
