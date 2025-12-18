@@ -64,21 +64,21 @@ This project implements a deep learning solution for automatically detecting and
 
 ### Performance Curves
 
-![F1 Curve](results/F1_curve.png)<img width="2250" height="1500" alt="BoxF1_curve" src="https://github.com/user-attachments/assets/06958d87-5d45-49eb-a734-6c7c8bc21e75" />
+![F1 Curve](results/F1_curve.png)
+![BoxF1 Curve](https://github.com/user-attachments/assets/06958d87-5d45-49eb-a734-6c7c8bc21e75)
 
-![Precision-Recall Curve](results/PR_curve.png)<img width="2250" height="1500" alt="MaskF1_curve" src="https://github.com/user-attachments/assets/ba1b3217-6c56-44ba-8eb0-c9840f75296b" />
-
-
+![Precision-Recall Curve](results/PR_curve.png)
+![MaskF1 Curve](https://github.com/user-attachments/assets/ba1b3217-6c56-44ba-8eb0-c9840f75296b)
 
 ### Confusion Matrix
 
-![Confusion Matrix](results/confusion_matrix.png)<img width="3000" height="2250" alt="confusion_matrix" src="https://github.com/user-attachments/assets/a91e3a56-c55b-486c-afc3-127d1de2c2bf" />
-
+![Confusion Matrix](results/confusion_matrix.png)
+![Confusion Matrix Normalized](https://github.com/user-attachments/assets/a91e3a56-c55b-486c-afc3-127d1de2c2bf)
 
 ### Training Metrics
 
-![Training Loss](results/results.png)<img width="3600" height="1200" alt="results" src="https://github.com/user-attachments/assets/5b70c653-c726-444a-83b4-0881bfc6582c" />
-
+![Training Loss](results/results.png)
+![Training Results](https://github.com/user-attachments/assets/5b70c653-c726-444a-83b4-0881bfc6582c)
 
 ## 📁 Dataset
 
@@ -209,22 +209,29 @@ hieroglyph-detection/
 
 ## 🎨 Results
 
-### Visual Examples
+### Detection Example
 
-The model successfully detects and segments hieroglyphs across various conditions:
+![Hieroglyph Detection Results](results/val_batch0_pred.jpg)
 
-**Sample Predictions**
+The model successfully detects and segments 235K+ hieroglyph instances with precise pixel-level masks. Each detected hieroglyph is highlighted with a green segmentation mask and red bounding box, demonstrating the system's ability to identify individual symbols even in dense inscriptions.
 
-![Validation Predictions](results/val_batch0_pred.jpg)![val_batch1_pred](https://github.com/user-attachments/assets/e17c74ae-8e93-4511-bd5d-39cec31c0b28)
+### Training Performance
 
+![Training Metrics](results/results.png)
 
-**Detection Examples**
+The training curves show consistent improvement across all metrics over 25 epochs:
+- **Loss curves** (top row): Steady decrease in box, segmentation, classification, and DFL losses for both training and validation sets
+- **Precision & Recall** (middle row): High precision (~95%) and recall (~59%) on both bounding boxes and masks
+- **mAP scores** (right columns): Achieved 70.9% mAP@0.5 and 42.5% mAP@0.5:0.95, indicating robust detection performance
 
-![Detection 1](results/val_batch1_pred.jpg)![val_batch2_labels](https://github.com/user-attachments/assets/76253b6b-b1c6-4884-ae7b-f670e6b9a502)![Uploading val_batch2_labels.jpg…]()
+The validation metrics closely track training metrics, demonstrating good generalization without overfitting.
 
+### Additional Visual Examples
 
-![Detection 2](results/val_batch2_pred.jpg)![val_batch2_pred](https://github.com/user-attachments/assets/0c1b17d3-7f5a-4106-9a99-e89a123207af)
-
+![Validation Predictions](results/val_batch1_pred.jpg)
+![Validation Labels](https://github.com/user-attachments/assets/76253b6b-b1c6-4884-ae7b-f670e6b9a502)
+![Detection 2](results/val_batch2_pred.jpg)
+![More Predictions](https://github.com/user-attachments/assets/0c1b17d3-7f5a-4106-9a99-e89a123207af)
 
 ### Confusion Matrix Analysis
 - True Positives: 59,608 hieroglyphs correctly detected
