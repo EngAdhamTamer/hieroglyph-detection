@@ -211,13 +211,13 @@ hieroglyph-detection/
 
 ### Detection Example
 
-![Hieroglyph Detection Results](results/val_batch0_pred.jpg)
+![Hieroglyph Detection Results](IMG-20251219-WA0000.jpg)
 
 The model successfully detects and segments 235K+ hieroglyph instances with precise pixel-level masks. Each detected hieroglyph is highlighted with a green segmentation mask and red bounding box, demonstrating the system's ability to identify individual symbols even in dense inscriptions.
 
 ### Training Performance
 
-![Training Metrics](results/results.png)
+![Training Metrics](results_1.png)
 
 The training curves show consistent improvement across all metrics over 25 epochs:
 - **Loss curves** (top row): Steady decrease in box, segmentation, classification, and DFL losses for both training and validation sets
